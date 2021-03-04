@@ -6,6 +6,7 @@
            
         var y=component.find("SecondNumberid").get("v.value");
         var z=parseInt(x)+parseInt(y);
+                alert(z);
         component.find("resultid").set("v.value",z);
         },
         sub : function(component, event, helper){
