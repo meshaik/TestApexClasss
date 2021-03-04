@@ -3,8 +3,8 @@
             alert("add");
         var x=component.find("FirstNumberid").get("v.value");
             alert(x);
-            alert(x);
-           
+           alert(x);
+           alert(x);
         var y=component.find("SecondNumberid").get("v.value");
         var z=parseInt(x)+parseInt(y);
         component.find("resultid").set("v.value",z);
