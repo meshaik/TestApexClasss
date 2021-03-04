@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable">
+	<!--Create aura attribute--> 
+     
+    <aura:attribute name="firstnumber" type="integer"/>
+    <aura:attribute name="secondnumber" type="integer"/>
+    <aura:attribute name="result" type="double"/> 
+    
+    
+    <!--Display Calc Image--> 
+    <div class="border">  
+    <div class="heading">
+     <H1>Calci Application</H1>
+      </div> 
+    <img src="{!$Resource.calc_image}" class="imagesize"/>   
+    <!--Lightning Input / output fields -->
+    <div class="inputWidth">
+    <lightning:input label="First Number"  value="{!v.firstnumber}"/> 
+    <lightning:input label="Second Number"  value="{!v.secondnumber}"/>  
+    </div>
+    <lightning:button label="Addition"    variant="brand" onclick="{!c.add}" /> 
+    <lightning:button label="Subtraction" variant="destructive"    onclick="{!c.sub}"/>
+    <lightning:button label="Multiplication" variant="success" onclick="{!c.mul}" />
+    <lightning:button label="Division"  variant="brand"     onclick="{!c.div}" />
+     
+    
+    <div class="resultdisplay">  
+   Result is: {!v.result}
+         </div>  
+    </div>
+</aura:component>

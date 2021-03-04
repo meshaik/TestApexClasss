@@ -1,0 +1,23 @@
+.THIS {
+}
+   .THIS .resultdisplay{  
+    color: RED;
+}
+ .THIS.border{
+    width:40%;
+    border :5px SOLID BLUE;
+    
+}
+ .THIS .inputWidth{
+   width :100px;
+   font-family:verdana;
+   font-size:20px;
+   color:RED;
+}
+
+ .THIS .heading{  
+    color: BLACK;
+    width :50px;
+    font-size:30px;
+    
+}

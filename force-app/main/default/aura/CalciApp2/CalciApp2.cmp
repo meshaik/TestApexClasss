@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId" access="global" >
+    <lightning:input aura:id="FirstNumberid" label="First Number" type="text" onchange="{!c.press}"/>
+    <lightning:input aura:id="SecondNumberid" label="Second Number" type="text" onchange="{!c.press}"/>
+    <lightning:button label="add" onclick="{!c.add}" ></lightning:button>
+    <lightning:button label="sub" onclick="{!c.sub}"/>  
+        <lightning:input aura:id="resultid" label="result" disabled="true"></lightning:input>
+
+</aura:component>
